@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#tit {
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#tit2 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#background-container {
+    background-image: url("pics/archivio.png");; /* Percorso dell'immagine */
+    background-size: cover; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */
+    height: 70vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+.fade-out {
+    opacity: 0; /* Opacità 0, il che rende lo sfondo scomparire */
+}
+#background-container2 {
+    background-image: url("pics/villa.jpeg");; /* Percorso dell'immagine */
+    background-size: 100%; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */
+    height: 70vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+#header {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -300px; /* Nascondi l'intestazione all'inizio */
+    height: 130px;
+    background-image: url("pics/archivio2.png");; /* Opacità per una migliore leggibilità */
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+#header2 {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -400px; /* Nascondi l'intestazione all'inizio */
+    height: 200px;
+    background-image: url("pics/villa2.jpeg");; /* Opacità per una migliore leggibilità */
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    display: flex;
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    margin: 0 auto;
+}
+
+#background-container3 {
+    background-image: url("pics/arena.jpg");; /* Percorso dell'immagine */
+    background-size: 100%; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */
+    height: 70vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+#header3 {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -400px; /* Nascondi l'intestazione all'inizio */
+    height: 130px;
+    background-image: url("pics/arena2.jpg");; /* Opacità per una migliore leggibilità */
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+#background-container4 {
+    background-image: url("pics/teatro.jpg");; /* Percorso dell'immagine */
+    background-size: 100%; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */
+    height: 70vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+#background-container5 {
+    background-image: url("pics/pcto2.jpg");; /* Percorso dell'immagine */
+    background-size: 100%; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-position: center; /* Centra l'immagine */
+    height: 55vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
+#header4 {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -400px; /* Nascondi l'intestazione all'inizio */
+    height: 130px;
+    background-image: url("pics/pcto.jpg");; /* Opacità per una migliore leggibilità */
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+#header5 {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: -200px;
+    height: 80px;
+    background-color: #1d7fb783;
+    transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    width: 100%;
+    z-index: 700; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (orizzontalmente) */
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+#header.visible {
+    top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
+}
+#header2.visible {
+    top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
+}
+#header3.visible {
+    top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
+}
+#header5.visible {
+    top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
+}
+#scopri {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 33%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
