@@ -44,21 +44,21 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     const fadeButton = document.getElementById('fadeButton');
     
-    if (scrollPosition > headerHeight+340) {
+    if (scrollPosition > headerHeight+300) {
         header.classList.add('visible');
         backgroundContainer.classList.add('fade-out');
         header5.classList.remove('visible');
-        if (scrollPosition > header2Height+1000){
+        if (scrollPosition > header2Height+960){
             header.classList.remove('visible');
             backgroundContainer.classList.remove('fade-out');
             header2.classList.add('visible');
             backgroundContainer2.classList.add('fade-out');
-            if (scrollPosition > header3Height+1630){
+            if (scrollPosition > header3Height+1600){
                 header2.classList.remove('visible');
                 backgroundContainer.classList.remove('fade-out');
                 header3.classList.add('visible');
                 backgroundContainer3.classList.add('fade-out');
-                if (scrollPosition > header4Height+2260){
+                if (scrollPosition > header4Height+2220){
                     header3.classList.remove('visible');
                     backgroundContainer2.classList.remove('fade-out');
                     header4.classList.add('visible');
