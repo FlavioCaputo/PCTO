@@ -47,9 +47,11 @@ body {
     font-family: "Times New Roman", Times, serif;
     position: fixed;
     top: -400px; /* Nascondi l'intestazione all'inizio */
-    height: 200px;
+    height: 130px;
     background-image: url("pics/villa2.jpeg");; /* Opacità per una migliore leggibilità */
     transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
     width: 100%;
     z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
     display: flex;
@@ -93,12 +95,22 @@ body {
     height: 55vh; /* Altezza della finestra del browser */
     transition: opacity 1s ease;
 }
+#background-container6 {
+    background-image: url("pics/leonardo.jpg");; /* Percorso dell'immagine */
+    background-size: 100%; /* Adatta l'immagine per coprire tutto l'elemento */
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    background-position: center; /* Centra l'immagine */
+    height: 55vh; /* Altezza della finestra del browser */
+    transition: opacity 1s ease;
+}
 #header4 {
     font-family: "Times New Roman", Times, serif;
     position: fixed;
+    font-size: 20px;
     top: -400px; /* Nascondi l'intestazione all'inizio */
     height: 130px;
-    background-image: url("pics/pcto.jpg");; /* Opacità per una migliore leggibilità */
+    background-image: url("pics/pira.jpg");; /* Opacità per una migliore leggibilità */
     transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
     width: 100%;
     z-index: 1000; /* Assicura che l'intestazione sia sopra l'immagine di sfondo */
@@ -106,11 +118,12 @@ body {
     align-items: center;
     display: flex;
     margin: 0 auto;
+    padding-top: 30px;
 }
 #header5 {
     font-family: "Times New Roman", Times, serif;
     position: fixed;
-    top: -200px;
+    top: -440px;
     height: 80px;
     background-color: #1d7fb783;
     transition: top 0.3s ease-in-out; /* Aggiungi transizione per effetto di scorrimento */
@@ -129,6 +142,9 @@ body {
     top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
 }
 #header3.visible {
+    top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
+}
+#header4.visible {
     top: 0; /* Mostra l'intestazione quando l'utente scorre verso il basso */
 }
 #header5.visible {
@@ -157,6 +173,136 @@ body {
     transform-origin: center; 
 }
 #scopri:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
+#scopri2 {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 106%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri2:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
+#scopri3 {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 179%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri3:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
+#scopri4 {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 247%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri4:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
+#scopri5 {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 310%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri5:hover {
+    transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
+    padding: 50%, 10%;
+}
+#scopri6 {
+    width: 160px;
+    height: 160px;
+    background-image: url('pics/freccia.png');
+    background-color: rgba(0, 136, 255, 0);
+    background-size: cover; /* Adatta l'immagine alla dimensione del pulsante */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(127, 255, 212, 0);
+    border-radius: 50px;
+    font-size: 70px;
+    font-family: "Garamond", serif;
+    position: absolute;
+    top: 363%; /* Posizionamento verticale al 30% del contenitore */
+    left: 93.5%; /* Posizionamento orizzontale al 90% del contenitore */
+    display: flex;
+    line-height: 0.25;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Sposta il pulsante al centro */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: transform 0.8s; /* Effetto di transizione per una transizione fluida */
+    transform-origin: center; 
+}
+#scopri6:hover {
     transform: translate(-50%, -50%) scale(1.5); /* Ingrandisce il pulsante */
     padding: 50%, 10%;
 }
