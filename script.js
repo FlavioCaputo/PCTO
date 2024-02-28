@@ -44,7 +44,7 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     const fadeButton = document.getElementById('fadeButton');
     
-    if (scrollPosition > headerHeight+250) {
+    if (scrollPosition > headerHeight+150) {
         header.classList.add('visible');
         backgroundContainer.classList.add('fade-out');
         header5.classList.remove('visible');
